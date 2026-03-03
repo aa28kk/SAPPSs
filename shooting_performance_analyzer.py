@@ -4,8 +4,7 @@ import openai
 import os
 
 # Load your key from an environment variable
-openai.api_key = os.getenv("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")
-
+openai.api_key = os.getenv("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")
 def get_shooting_advice(performance_data):
     response = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
@@ -842,5 +841,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
